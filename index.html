@@ -80,7 +80,13 @@
 <div class="table-wrap"><table class="table"><thead><tr><th>Year</th><th>SIP invested</th><th>Lump sum</th><th>Total invested</th><th>Estimated value</th><th>Estimated return</th></tr></thead><tbody id="projection"></tbody></table></div>
 <p class="notice">Illustrative calculation only. Actual investment returns fluctuate and are not guaranteed. SIP is treated as invested at the end of each month; lump sums are treated as invested at the end of their selected year. Current / initial investment is assumed to be already invested today and compounds for the full selected period.</p>
 </section>
-<section class="disclaimer"><div class="disclaimer-title">Important Disclaimer</div><div>This calculator is for illustrative and educational purposes only and should not be considered investment, financial, tax or legal advice. The projections are based on the assumptions entered by the user and are not a guarantee of future returns. Actual mutual fund and market returns may vary significantly. Past performance is not indicative of future results. Investment decisions should be made after considering your financial objectives, risk profile, time horizon and applicable scheme documents. Mutual fund investments are subject to market risks; read all scheme-related documents carefully before investing.</div><div class="disclaimer-brand">© Maple Wealth • Building Wealth, Securing Futures</div></section>
+<section class="disclaimer">
+  <div class="disclaimer-title">Important Legal & Regulatory Disclaimer</div>
+  <div>This Goal-Based Calculator is a financial planning tool provided for illustrative and educational purposes only. It does not constitute professional investment, financial, tax, or legal advice. The projections generated are based solely on the assumptions you enter (such as expected rate of return and inflation) and do not reflect actual, real-time market conditions. <br><br>
+  <strong>Past performance of any asset class or mutual fund is not a reliable indicator of future results.</strong> Actual returns will fluctuate, and the principal value of investments may decline. Please consult a certified financial advisor before making any investment decisions based on these estimates.<br><br>
+  <em>Mutual Fund investments are subject to market risks, read all scheme-related documents carefully.</em></div>
+  <div class="disclaimer-brand">© 2026 Maple Wealth • Building Wealth, Securing Futures</div>
+</section>
 </div></div>
 <script>
 (function(){
@@ -117,4 +123,5 @@ document.getElementById('download').addEventListener('click',()=>{const html='<!
 document.getElementById('calculate').addEventListener('click',calculate);document.getElementById('reset').addEventListener('click',()=>{document.getElementById('target').value=10000000;document.getElementById('corpus').value=10000000;document.getElementById('initial').value=0;document.getElementById('sip').value=50000;document.getElementById('stepup').value=10;document.getElementById('rate').value=12;document.getElementById('inflation').value=6;document.getElementById('years').value=10;document.getElementById('lumps').innerHTML='';lumpId=0;calculate()});document.getElementById('addLump').addEventListener('click',()=>addLump(1,0));document.querySelectorAll('#investment-app input').forEach(x=>x.addEventListener('input',calculate));calculate();
 })();
 </script>
-</div>
+</body>
+</html>
